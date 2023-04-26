@@ -1,4 +1,6 @@
 #include <SFML/Graphics.hpp>
+#include "Vector2.h"
+#include <iostream>
 
 int main()
 {
@@ -11,6 +13,10 @@ int main()
     sprite.setTexture(texture);
     sprite.setPosition(sf::Vector2f(250, 250));
     sprite.scale(sf::Vector2f(3, 3));
+
+    Vector2* vector = new Vector2(2, 3);
+    float magnitude = Vector2::Magnitude(*vector);
+    std::cout << magnitude << std::endl;
 
     while (window.isOpen())
     {

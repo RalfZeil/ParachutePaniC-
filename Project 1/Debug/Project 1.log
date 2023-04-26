@@ -1,2 +1,6 @@
-﻿  main.cpp
+﻿  Vector2.cpp
+C:\Users\ralfz\source\repos\SFML\Project 1\src\Vector2.cpp(31,13): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\ralfz\source\repos\SFML\Project 1\src\Vector2.cpp(36,27): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  main.cpp
+  Generating Code...
   Project 1.vcxproj -> C:\Users\ralfz\source\repos\SFML\Debug\Project 1.exe
