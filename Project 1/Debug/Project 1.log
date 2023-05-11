@@ -1,7 +1,12 @@
-﻿  GameObject.cpp
-  Player.cpp
-  Vector2.cpp
-C:\Users\ralfz\source\repos\SFML\Project 1\src\Vector2.cpp(31,13): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-C:\Users\ralfz\source\repos\SFML\Project 1\src\Vector2.cpp(36,27): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-  Generating Code...
-  Project 1.vcxproj -> C:\Users\ralfz\source\repos\SFML\Debug\Project 1.exe
+﻿  Player.cpp
+C:\Users\ralfz\source\repos\SFML\Project 1\src\Player.cpp(4): error C2280: 'GameObject::GameObject(void)': attempting to reference a deleted function
+C:\Users\ralfz\source\repos\SFML\Project 1\src\GameObject.h(13): message : compiler has generated 'GameObject::GameObject' here
+C:\Users\ralfz\source\repos\SFML\Project 1\src\GameObject.h(13,1): message : 'GameObject::GameObject(void)': function was implicitly deleted because a data member 'GameObject::collider' has either no appropriate default constructor or overload resolution was ambiguous
+C:\Users\ralfz\source\repos\SFML\Project 1\src\GameObject.h(11): message : see declaration of 'GameObject::collider'
+C:\Users\ralfz\source\repos\SFML\Project 1\src\Player.cpp(5,64): error C2665: 'CircleCollider::CircleCollider': none of the 3 overloads could convert all the argument types
+C:\Users\ralfz\source\repos\SFML\Project 1\src\CircleCollider.h(10,2): message : could be 'CircleCollider::CircleCollider(Vector2,float)'
+C:\Users\ralfz\source\repos\SFML\Project 1\src\Player.cpp(5,37): message : 'CircleCollider::CircleCollider(Vector2,float)': cannot convert argument 2 from 'Vector2 *' to 'float'
+C:\Users\ralfz\source\repos\SFML\Project 1\src\Player.cpp(5,57): message : There is no context in which this conversion is possible
+C:\Users\ralfz\source\repos\SFML\Project 1\src\CircleCollider.h(10,2): message : see declaration of 'CircleCollider::CircleCollider'
+C:\Users\ralfz\source\repos\SFML\Project 1\src\Player.cpp(5,64): message : while trying to match the argument list '(float, Vector2 *)'
+C:\Users\ralfz\source\repos\SFML\Project 1\src\Player.cpp(7,1): error C2059: syntax error: '}'

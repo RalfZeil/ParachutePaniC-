@@ -3,8 +3,11 @@
 
 class CircleCollider
 {
-public:
-	Vector2 position;
+private:
+	Vector2 relativePosition;
 	float radius;
+
+public:
+	CircleCollider(Vector2 relativePosition, float radius);
 };
 
