@@ -1,6 +1,7 @@
 #include <SFML/Graphics.hpp>
 #include "Vector2.h"
 #include <iostream>
+#include "GameManager.h"
 
 int main()
 {
@@ -14,12 +15,12 @@ int main()
     sprite.setPosition(sf::Vector2f(250, 250));
     sprite.scale(sf::Vector2f(3, 3));
 
-    Vector2* vector = new Vector2(2, 3);
-    float magnitude = Vector2::Magnitude(*vector);
-    std::cout << magnitude << std::endl;
+    GameManager::StartAllGameObjects();
 
     while (window.isOpen())
     {
+        GameManager::UpdateAllGameObjects();
+
         sf::Event event;
         while (window.pollEvent(event))
         {
@@ -27,7 +28,7 @@ int main()
                 window.close();
         }
 
-        window.clear();
+        window.clear(sf::Color::Cyan);
         window.draw(sprite);
         window.display();
     }

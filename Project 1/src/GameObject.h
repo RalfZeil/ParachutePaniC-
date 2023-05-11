@@ -6,9 +6,14 @@
 
 class GameObject
 {
-public:
+private:
 	sf::Texture objectTexture;
 	CircleCollider collider;
 	Physics physics;
+
+public:
+	GameObject(std::string texLocation, float size);
+	virtual void Start();
+	virtual void Update();
 };
 
