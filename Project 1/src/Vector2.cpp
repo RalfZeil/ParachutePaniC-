@@ -31,7 +31,7 @@ float Vector2::Magnitude(Vector2 vector2)
 	return sqrt(pow(vector2.x, 2) + (pow(vector2.y, 2)));
 }
 
-float Vector2::SquareMagnitude(Vector2  vector2)
+float Vector2::SquareMagnitude(Vector2 vector2)
 {
 	return pow(vector2.x, 2) + pow(vector2.y, 2);
 }
