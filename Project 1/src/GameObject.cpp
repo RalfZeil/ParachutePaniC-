@@ -1,11 +1,7 @@
 #include "GameObject.h"
-#include "GameManager.h"
 
-GameObject::GameObject(std::string texLocation, float size)
+GameObject::GameObject()
 {
-	collider.ChangeRadius(size);
-	objectTexture.loadFromFile(texLocation);
-	//GameManager::AddNewGameObject(this);
 }
 
 void GameObject::Start()

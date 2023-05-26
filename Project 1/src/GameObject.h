@@ -1,19 +1,21 @@
 #pragma once
-#include <SFML/Graphics/Texture.hpp>
-#include "CircleCollider.h"
-#include "Physics.h"
+#include "Vector2.h"
+#include "IShape.h"
+#include "Sprite.h"
+
+using namespace rmath;
 
 
 class GameObject
 {
 private:
-	sf::Texture objectTexture;
-	CircleCollider collider;
-	Physics physics;
+	Vector2 m_Position;
+	IShape shape;
+	Sprite sprite;
 
 public:
-	GameObject(std::string texLocation, float size);
-	virtual void Start();
-	virtual void Update();
+	GameObject();
+	void Start();
+	void Update();
 };
 

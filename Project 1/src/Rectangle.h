@@ -1,17 +1,13 @@
 #pragma once
-#include "Shape.h"
-#include "Vector2.h"
-
-using namespace rmath;
-
-class Rectangle : public Shape
+#include "IShape.h"
+class Rectangle : public IShape
 {
 private:
-	int width, height;
-	Vector2 position;
+	float m_Width;
+	float m_Heigth;
+
 public:
-	Rectangle(int w, int h, Vector2 pos);
-	float Area();
-	void Draw();
+	virtual float GetArea();
+	virtual bool Collides(IShape other);
 };
 
