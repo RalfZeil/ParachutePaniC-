@@ -5,11 +5,11 @@
 static class GameManager
 {
 private:
-	static std::vector <GameObject> gameObjects;
+	std::vector <GameObject> gameObjects;
 
 public:
-	static void StartAllGameObjects();
-	static void UpdateAllGameObjects();
-	static void AddNewGameObject(GameObject gameObject);
+	void StartAllGameObjects();
+	void UpdateAllGameObjects();
+	void AddNewGameObject(GameObject gameObject);
 };
 

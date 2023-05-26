@@ -1,5 +1,15 @@
 #include "CircleCollider.h"
 
-CircleCollider::CircleCollider(Vector2 relativePosition, float radius) : 
-	relativePosition(relativePosition), radius (radius) 
+CircleCollider::CircleCollider()
+{
+	radius = 0;
+}
+
+CircleCollider::CircleCollider(float radius) :
+	radius(radius) 
 {}
+
+void CircleCollider::ChangeRadius(float newSize)
+{
+	radius = newSize;
+}

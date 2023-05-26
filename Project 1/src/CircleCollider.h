@@ -4,10 +4,12 @@
 class CircleCollider
 {
 private:
-	Vector2 relativePosition;
 	float radius;
 
 public:
-	CircleCollider(Vector2 relativePosition, float radius);
+	CircleCollider();
+	CircleCollider(float radius);
+
+	void ChangeRadius(float newSize);
 };
 

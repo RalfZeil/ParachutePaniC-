@@ -3,7 +3,9 @@
 
 GameObject::GameObject(std::string texLocation, float size)
 {
-	//GameManager::AddNewGameObject();
+	collider.ChangeRadius(size);
+	objectTexture.loadFromFile(texLocation);
+	//GameManager::AddNewGameObject(this);
 }
 
 void GameObject::Start()
