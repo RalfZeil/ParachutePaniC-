@@ -1,10 +1,11 @@
 #include "MainMenuScene.h"
 #include <iostream>
+#include "../GameManager.h"
 
 MainMenuScene::MainMenuScene()
 {
     AddButton(sf::Vector2f(500.f, 200.f), sf::Vector2f(200.f, 50.f), sf::Color::Green, []() {
-        std::cout << "Hello" << std::endl;
+        GameManager::GetInstance()->ChangeScene(GameManager::GetInstance()->m_gameScene);
     });
 
     AddButton(sf::Vector2f(500.f, 300.f), sf::Vector2f(200.f, 50.f), sf::Color::Blue, []() {

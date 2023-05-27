@@ -3,6 +3,15 @@
 #include "Scenes/MainMenuScene.h"
 #include "Scenes/GameScene.h"
 
+GameManager *GameManager::GetInstance()
+{
+    static GameManager* Instance;
+    if (Instance == nullptr) {
+        Instance = new GameManager();
+    }
+    return Instance;
+}
+
 GameManager::GameManager() : m_window(sf::VideoMode(1200, 800), "Parachute Panic")
 {
     m_mainMenuScene = new MainMenuScene();
@@ -25,6 +34,11 @@ void GameManager::run()
         update();
         render();
     }
+}
+
+void GameManager::ChangeScene(Scene* scene)
+{
+    m_currentScene = scene;
 }
 
 void GameManager::processEvents()
@@ -56,12 +70,17 @@ void GameManager::processEvents()
 
 void GameManager::update()
 {
+    if (m_currentScene) {
+        m_currentScene->Update();
+    }
 }
 
 void GameManager::render()
 {
     m_window.clear();
+
     if (m_currentScene)
         m_currentScene->Draw(m_window);
+
     m_window.display();
 }

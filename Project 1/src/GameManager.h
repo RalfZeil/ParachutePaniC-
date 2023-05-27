@@ -4,11 +4,6 @@
 
 static class GameManager
 {
-public:
-    GameManager();
-    ~GameManager();
-    void run();
-
 private:
     void processEvents();
     void update();
@@ -16,9 +11,19 @@ private:
 
     sf::RenderWindow m_window;
 
-    // Other member variables, such as player, obstacles, power-ups, etc.
+public:
+    GameManager(GameManager& other) = delete;
+    void operator=(const GameManager&) = delete;
+
+    static GameManager* GetInstance();
 
     Scene* m_currentScene;
     Scene* m_mainMenuScene;
     Scene* m_gameScene;
+
+    GameManager();
+    ~GameManager();
+    void run();
+    void ChangeScene(Scene* scene);
+
 };
