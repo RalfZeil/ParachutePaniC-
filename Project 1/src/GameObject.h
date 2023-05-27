@@ -5,7 +5,6 @@
 
 using namespace rmath;
 
-
 class GameObject
 {
 private:
@@ -15,6 +14,8 @@ private:
 
 public:
 	GameObject();
+	GameObject(Vector2 pos, IShape shape, Sprite sprite);
+	void ChangePosistion(Vector2 newPosition);
 	void Start();
 	void Update();
 };

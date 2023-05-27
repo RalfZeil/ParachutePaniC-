@@ -1,15 +1,24 @@
 #pragma once
-#include <list>
-#include "GameObject.h"
+#include <SFML/Graphics.hpp>
+#include "Scenes/Scene.h"
 
 static class GameManager
 {
-private:
-	std::vector <GameObject> gameObjects;
-
 public:
-	void StartAllGameObjects();
-	void UpdateAllGameObjects();
-	void AddNewGameObject(GameObject gameObject);
-};
+    GameManager();
+    ~GameManager();
+    void run();
 
+private:
+    void processEvents();
+    void update();
+    void render();
+
+    sf::RenderWindow m_window;
+
+    // Other member variables, such as player, obstacles, power-ups, etc.
+
+    Scene* m_currentScene;
+    Scene* m_mainMenuScene;
+    Scene* m_gameScene;
+};
