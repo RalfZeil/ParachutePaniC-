@@ -4,7 +4,7 @@
 Player::Player(float x, float y)
 {
 	sf::Texture texture;
-	texture.loadFromFile("/Textures/Charlie.png");
+	texture.loadFromFile("./Textures/Charlie.png");
 	m_Sprite.setTexture(texture);
 
 	m_Shape = Rectangle(100, 100);
