@@ -30,5 +30,5 @@ void MainMenuScene::AddButton(const sf::Vector2f& position, const sf::Vector2f& 
 
 std::vector<Button> MainMenuScene::GetButtons()
 {
-    return std::vector<Button>();
+    return m_buttons;
 }
