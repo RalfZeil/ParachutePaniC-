@@ -4,10 +4,10 @@ namespace rmath {
 
 	class Vector2
 	{
+	public:
 		float x;
 		float y;
 
-	public:
 		Vector2(float x = 0, float y = 0);
 
 		Vector2 operator / (float divisor);

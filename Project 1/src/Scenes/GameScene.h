@@ -1,5 +1,6 @@
 #pragma once
-#include "Scene.h";
+#include "Scene.h"
+#include "../GameObjects/Player.h"
 
 class GameScene : public Scene
 {
@@ -9,7 +10,6 @@ public:
     void Draw(sf::RenderWindow& window) override;
 
 private:
-    sf::RectangleShape rectangle;
-
+    Player *player;
 };
 

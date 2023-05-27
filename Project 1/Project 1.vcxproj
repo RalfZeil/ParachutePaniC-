@@ -140,30 +140,32 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\GameObjects\Player.cpp" />
     <ClCompile Include="src\Button.cpp" />
     <ClCompile Include="src\Scenes\GameScene.cpp" />
     <ClCompile Include="src\Scenes\MainMenuScene.cpp" />
     <ClCompile Include="src\SceneManager.cpp" />
     <ClCompile Include="src\Scenes\Scene.cpp" />
     <ClCompile Include="src\Sprite.cpp" />
-    <ClCompile Include="src\Rectangle.cpp" />
-    <ClCompile Include="src\IShape.cpp" />
+    <ClCompile Include="src\GameObjects\Rectangle.cpp" />
+    <ClCompile Include="src\GameObjects\IShape.cpp" />
     <ClCompile Include="src\GameManager.cpp" />
-    <ClCompile Include="src\GameObject.cpp" />
+    <ClCompile Include="src\GameObjects\GameObject.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Vector2.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\GameObjects\Player.h" />
     <ClInclude Include="src\Button.h" />
     <ClInclude Include="src\Scenes\GameScene.h" />
     <ClInclude Include="src\Scenes\MainMenuScene.h" />
     <ClInclude Include="src\SceneManager.h" />
     <ClInclude Include="src\Scenes\Scene.h" />
     <ClInclude Include="src\Sprite.h" />
-    <ClInclude Include="src\Rectangle.h" />
-    <ClInclude Include="src\IShape.h" />
+    <ClInclude Include="src\GameObjects\Rectangle.h" />
+    <ClInclude Include="src\GameObjects\IShape.h" />
     <ClInclude Include="src\GameManager.h" />
-    <ClInclude Include="src\GameObject.h" />
+    <ClInclude Include="src\GameObjects\GameObject.h" />
     <ClInclude Include="src\Vector2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

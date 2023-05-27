@@ -1,5 +1,5 @@
 #pragma once
-#include "../GameObject.h"
+#include "../GameObjects/GameObject.h"
 #include <SFML/Graphics/RenderWindow.hpp>
 
 class Scene

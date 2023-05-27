@@ -9,7 +9,7 @@ MainMenuScene::MainMenuScene()
     });
 
     AddButton(sf::Vector2f(500.f, 300.f), sf::Vector2f(200.f, 50.f), sf::Color::Blue, []() {
-        std::cout << "Woa" << std::endl;
+        std::exit(0);
     });
 }
 

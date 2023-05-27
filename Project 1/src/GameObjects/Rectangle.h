@@ -7,7 +7,8 @@ private:
 	float m_Heigth;
 
 public:
-	virtual float GetArea();
-	virtual bool Collides(IShape other);
+	Rectangle(float width, float height);
+	virtual float GetArea() override;
+	virtual bool Collides(IShape other) override;
 };
 
