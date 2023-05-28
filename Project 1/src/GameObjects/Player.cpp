@@ -4,13 +4,13 @@
 Player::Player(float x, float y)
 {
 	sf::Texture texture;
-	texture.loadFromFile("./Textures/Charlie.png");
+	texture.loadFromFile("./Textures/Charlie.png", sf::IntRect(0, 0, 64, 64));
 	m_Sprite.setTexture(texture);
 
 	m_Shape = Rectangle(100, 100);
 
 	ChangePosistion(rmath::Vector2(x, y));
-	speed = 5;
+	speed = 1;
 }
 
 void Player::Start()
