@@ -10,6 +10,7 @@ class GameObject
 protected:
 	Vector2 m_Position;
 	IShape m_Shape;
+	sf::Texture m_Texture;
 	sf::Sprite m_Sprite;
 
 public:

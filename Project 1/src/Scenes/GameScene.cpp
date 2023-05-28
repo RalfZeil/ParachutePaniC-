@@ -2,7 +2,7 @@
 #include <iostream>
 
 
-GameScene::GameScene() : player(new Player(500.f, 700.f))
+GameScene::GameScene() : player(new Player(500.f, 600.f))
 {}
 
 void GameScene::Update()
