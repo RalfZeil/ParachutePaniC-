@@ -2,6 +2,7 @@
 #include "Scenes/Scene.h"
 #include "Scenes/MainMenuScene.h"
 #include "Scenes/GameScene.h"
+#include <memory>;
 
 GameManager *GameManager::GetInstance()
 {
@@ -12,11 +13,10 @@ GameManager *GameManager::GetInstance()
     return Instance;
 }
 
-GameManager::GameManager() : m_window(sf::VideoMode(1200, 800), "Parachute Panic")
+GameManager::GameManager() : m_window(sf::VideoMode(SCREEN_WIDTH, SCREEN_HEIGHT),  WINDOW_TITLE)
 {
     m_mainMenuScene = new MainMenuScene();
     m_gameScene = new GameScene();
-
     m_currentScene = m_mainMenuScene;
 }
 
@@ -68,13 +68,18 @@ void GameManager::processEvents()
     }
 }
 
+//Update all the gameobjects in the scene
 void GameManager::update()
 {
     if (m_currentScene) {
-        m_currentScene->Update();
+
+        float dt = clock.restart().asSeconds();
+
+        m_currentScene->Update(dt);
     }
 }
 
+//Render all objects in the scene
 void GameManager::render()
 {
     m_window.clear();

@@ -6,7 +6,7 @@ class GameScene : public Scene
 {
 public:
     GameScene();
-    void Update() override;
+    void Update(float dt) override;
     void Draw(sf::RenderWindow& window) override;
 
 private:

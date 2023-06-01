@@ -7,7 +7,7 @@ class MainMenuScene : public Scene
 {
 public:
     MainMenuScene();
-    void Update() override;
+    void Update(float dt) override;
     void Draw(sf::RenderWindow& window) override;
 
     void AddButton(const sf::Vector2f& position, const sf::Vector2f& size, const sf::Color& fillColor, std::function<void()> onClick);

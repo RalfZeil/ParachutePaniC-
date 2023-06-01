@@ -13,7 +13,7 @@ MainMenuScene::MainMenuScene()
     });
 }
 
-void MainMenuScene::Update()
+void MainMenuScene::Update(float dt)
 {
 }
 

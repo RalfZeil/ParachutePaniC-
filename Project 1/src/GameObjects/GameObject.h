@@ -19,7 +19,7 @@ public:
 	void ChangePosistion(Vector2 newPosition);
 	Vector2 GetPosistion();
 	virtual void Start();
-	virtual void Update();
+	virtual void Update(float dt);
 	void Draw(sf::RenderWindow& window);
 };
 

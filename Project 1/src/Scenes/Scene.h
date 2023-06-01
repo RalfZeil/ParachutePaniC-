@@ -7,7 +7,7 @@ class Scene
 public:
 	Scene();
 	virtual ~Scene();
-	virtual void Update();
+	virtual void Update(float dt);
 	virtual void Draw(sf::RenderWindow& window);
 };
 

@@ -26,7 +26,7 @@ void GameObject::Start()
 {
 }
 
-void GameObject::Update()
+void GameObject::Update(float dt)
 {
 }
 
