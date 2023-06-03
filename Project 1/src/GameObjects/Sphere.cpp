@@ -14,6 +14,7 @@ float Sphere::GetArea()
 	return 0.0f;
 }
 
+
 bool Sphere::Collides(IShape other)
 {
 	return false;

@@ -4,8 +4,8 @@
 
 GameScene::GameScene() : player(new Player(500.f, 600.f)), enemy(new Enemy(300.f, 600.f))
 {
-	gameObjects.push_back(*player);
-	gameObjects.push_back(*enemy);
+	gameObjects.push_back(player);
+	gameObjects.push_back(enemy);
 }
 
 void GameScene::Update(float dt)

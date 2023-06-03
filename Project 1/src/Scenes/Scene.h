@@ -7,7 +7,7 @@
 class Scene
 {
 protected:
-	std::list<const GameObject&> gameObjects;
+	std::list<GameObject*> gameObjects;
 
 public:
 	Scene();

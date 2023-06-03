@@ -22,6 +22,11 @@ Vector2 GameObject::GetPosistion()
 	return m_Position;
 }
 
+IShape GameObject::GetShape()
+{
+	return m_Shape;
+}
+
 void GameObject::Start()
 {
 }

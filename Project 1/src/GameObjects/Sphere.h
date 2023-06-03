@@ -7,8 +7,7 @@ private:
 
 public:
 	Sphere(float radius);
-	float GetRadius();
-
+	virtual float GetRadius() override;
 	virtual float GetArea() override;
 	virtual bool Collides(IShape other) override;
 };

@@ -18,6 +18,7 @@ public:
 	GameObject(Vector2 pos, IShape shape, sf::Sprite sprite);
 	void ChangePosistion(Vector2 newPosition);
 	Vector2 GetPosistion();
+	IShape GetShape();
 	virtual void Start();
 	virtual void Update(float dt);
 	void Draw(sf::RenderWindow& window);
