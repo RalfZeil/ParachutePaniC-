@@ -5,8 +5,8 @@ GameObject::GameObject()
 {
 }
 
-GameObject::GameObject(Vector2 pos, IShape shape, sf::Sprite sprite) 
-	: m_Position(pos), m_Shape(shape), m_Sprite(sprite) 
+GameObject::GameObject(Vector2 pos, Sphere sphere, sf::Sprite sprite) 
+	: m_Position(pos), m_Sphere(sphere), m_Sprite(sprite) 
 {
 	ChangePosistion(pos);
 }
@@ -22,9 +22,9 @@ Vector2 GameObject::GetPosistion()
 	return m_Position;
 }
 
-IShape GameObject::GetShape()
+Sphere GameObject::GetSphere()
 {
-	return m_Shape;
+	return m_Sphere;
 }
 
 void GameObject::Start()

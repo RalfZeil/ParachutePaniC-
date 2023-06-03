@@ -6,6 +6,7 @@ private:
 	float m_Radius;
 
 public:
+	Sphere();
 	Sphere(float radius);
 	virtual float GetRadius() override;
 	virtual float GetArea() override;

@@ -19,18 +19,15 @@ void Scene::DetectCollision()
 	{
 		for (GameObject* gameObjectB : gameObjects) 
 		{
-			if (&gameObjectA == &gameObjectB) { break; }
+			if (gameObjectA == gameObjectB) { break; }
 
 			Vector2 vectorDelta = gameObjectB->GetPosistion() - gameObjectA->GetPosistion();
 			float vectorDeltaMagnitude = sqrt(pow(vectorDelta.x, 2) + pow(vectorDelta.y, 2));
-			float spheresDistance = vectorDeltaMagnitude - gameObjectA->GetShape().GetRadius(); -gameObjectB->GetShape().GetRadius();
+			float spheresDistance = vectorDeltaMagnitude - gameObjectA->GetSphere().GetRadius(); - gameObjectB->GetSphere().GetRadius();
 
-			if (vectorDeltaMagnitude < 0) { std::cout << "Collision" << std::endl; }
+			std::cout << spheresDistance << std::endl;
 
-			else { 
-				std::cout << gameObjectA->GetShape().GetRadius() << " " << gameObjectA->GetPosistion().x << " " << gameObjectA->GetPosistion().y << std::endl;
-				std::cout << gameObjectB->GetShape().GetRadius() << " " << gameObjectB->GetPosistion().x << " " << gameObjectB->GetPosistion().y << std::endl;
-			}
+			if (spheresDistance < 0) { std::cout << "Collision" << std::endl; }
 		}
 	}
 }

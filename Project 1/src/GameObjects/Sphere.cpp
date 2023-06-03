@@ -1,5 +1,10 @@
 #include "Sphere.h"
 
+Sphere::Sphere()
+{
+	m_Radius = 0.f;
+}
+
 Sphere::Sphere(float radius) : m_Radius(radius)
 {
 }
