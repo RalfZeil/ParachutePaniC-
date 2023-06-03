@@ -76,6 +76,7 @@ void GameManager::update()
         float dt = clock.restart().asSeconds();
 
         m_currentScene->Update(dt);
+        m_currentScene->DetectCollision();
     }
 }
 

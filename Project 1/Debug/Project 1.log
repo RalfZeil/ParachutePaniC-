@@ -1,4 +1,384 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(534,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Project 1.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  Player.cpp
+  GameScene.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(793,1): error C2528: 'pointer': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(612): message : see reference to class template instantiation 'std::allocator<const GameObject &>' being compiled
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(706): message : see reference to class template instantiation 'std::_Default_allocator_traits<_Alloc>' being compiled
+          with
+          [
+              _Alloc=std::allocator<const GameObject &>
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(761): message : see reference to class template instantiation 'std::allocator_traits<_Alloc>' being compiled
+          with
+          [
+              _Alloc=std::allocator<const GameObject &>
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(761): message : see reference to alias template instantiation 'std::_Rebind_alloc_t<_Alloc,_Ty>' being compiled
+          with
+          [
+              _Alloc=std::allocator<const GameObject &>,
+              _Ty=const GameObject &
+          ]
+C:\Users\ralfz\source\repos\SFML\Project 1\src\Scenes\Scene.h(10): message : see reference to class template instantiation 'std::list<const GameObject &,std::allocator<const GameObject &>>' being compiled
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(794,1): error C2528: 'const_pointer': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(812,1): error C2528: 'address': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(816,1): error C2528: 'address': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(829,1): error C2528: '_Ptr': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(835,1): error C2528: 'allocate': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(848,1): error C2528: 'allocate': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(614,1): error C2528: 'abstract declarator': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(615,1): error C2528: 'abstract declarator': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(634,1): error C2528: '<template-parameter>': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(648,1): error C2528: '<template-parameter>': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(770,101): error C2528: '<template-parameter>': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(1222,1): error C2535: 'void std::list<const GameObject &,std::allocator<const GameObject &>>::push_front(_Ty)': member function already defined or declared
+          with
+          [
+              _Ty=const GameObject &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(953): message : see declaration of 'std::list<const GameObject &,std::allocator<const GameObject &>>::push_front'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(1234,1): error C2535: 'void std::list<const GameObject &,std::allocator<const GameObject &>>::push_back(_Ty)': member function already defined or declared
+          with
+          [
+              _Ty=const GameObject &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(957): message : see declaration of 'std::list<const GameObject &,std::allocator<const GameObject &>>::push_back'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(1303,1): error C2535: 'std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>> std::list<_Ty,std::allocator<_Ty>>::insert(std::_List_const_iterator<std::_List_val<std::_List_simple_types<_Ty>>>,_Ty)': member function already defined or declared
+          with
+          [
+              _Ty=const GameObject &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(961): message : see declaration of 'std::list<const GameObject &,std::allocator<const GameObject &>>::insert'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(750,1): error C2528: 'abstract declarator': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(334): message : see reference to class template instantiation 'std::_Simple_types<_Ty>' being compiled
+          with
+          [
+              _Ty=const GameObject &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(342): message : see reference to class template instantiation 'std::_List_simple_types<_Ty>' being compiled
+          with
+          [
+              _Ty=const GameObject &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(1368): message : see reference to class template instantiation 'std::_List_val<std::_List_simple_types<_Ty>>' being compiled
+          with
+          [
+              _Ty=const GameObject &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(1777): message : see reference to class template instantiation 'std::_Compressed_pair<std::allocator<std::_List_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer>>,std::_List_val<std::_List_simple_types<_Ty>>,true>' being compiled
+          with
+          [
+              _Ty=const GameObject &,
+              _Alloc=std::allocator<const GameObject &>
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(751,1): error C2528: 'abstract declarator': you cannot create a pointer to a reference
+  MainMenuScene.cpp
+C:\Users\ralfz\source\repos\SFML\Project 1\src\Scenes\MainMenuScene.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(793,1): error C2528: 'pointer': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(612): message : see reference to class template instantiation 'std::allocator<const GameObject &>' being compiled
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(706): message : see reference to class template instantiation 'std::_Default_allocator_traits<_Alloc>' being compiled
+          with
+          [
+              _Alloc=std::allocator<const GameObject &>
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(761): message : see reference to class template instantiation 'std::allocator_traits<_Alloc>' being compiled
+          with
+          [
+              _Alloc=std::allocator<const GameObject &>
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(761): message : see reference to alias template instantiation 'std::_Rebind_alloc_t<_Alloc,_Ty>' being compiled
+          with
+          [
+              _Alloc=std::allocator<const GameObject &>,
+              _Ty=const GameObject &
+          ]
+C:\Users\ralfz\source\repos\SFML\Project 1\src\Scenes\Scene.h(10): message : see reference to class template instantiation 'std::list<const GameObject &,std::allocator<const GameObject &>>' being compiled
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(794,1): error C2528: 'const_pointer': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(812,1): error C2528: 'address': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(816,1): error C2528: 'address': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(829,1): error C2528: '_Ptr': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(835,1): error C2528: 'allocate': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(848,1): error C2528: 'allocate': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(614,1): error C2528: 'abstract declarator': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(615,1): error C2528: 'abstract declarator': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(634,1): error C2528: '<template-parameter>': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(648,1): error C2528: '<template-parameter>': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(770,101): error C2528: '<template-parameter>': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(1222,1): error C2535: 'void std::list<const GameObject &,std::allocator<const GameObject &>>::push_front(_Ty)': member function already defined or declared
+          with
+          [
+              _Ty=const GameObject &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(953): message : see declaration of 'std::list<const GameObject &,std::allocator<const GameObject &>>::push_front'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(1234,1): error C2535: 'void std::list<const GameObject &,std::allocator<const GameObject &>>::push_back(_Ty)': member function already defined or declared
+          with
+          [
+              _Ty=const GameObject &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(957): message : see declaration of 'std::list<const GameObject &,std::allocator<const GameObject &>>::push_back'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(1303,1): error C2535: 'std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>> std::list<_Ty,std::allocator<_Ty>>::insert(std::_List_const_iterator<std::_List_val<std::_List_simple_types<_Ty>>>,_Ty)': member function already defined or declared
+          with
+          [
+              _Ty=const GameObject &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(961): message : see declaration of 'std::list<const GameObject &,std::allocator<const GameObject &>>::insert'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(750,1): error C2528: 'abstract declarator': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(334): message : see reference to class template instantiation 'std::_Simple_types<_Ty>' being compiled
+          with
+          [
+              _Ty=const GameObject &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(342): message : see reference to class template instantiation 'std::_List_simple_types<_Ty>' being compiled
+          with
+          [
+              _Ty=const GameObject &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(1368): message : see reference to class template instantiation 'std::_List_val<std::_List_simple_types<_Ty>>' being compiled
+          with
+          [
+              _Ty=const GameObject &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(1777): message : see reference to class template instantiation 'std::_Compressed_pair<std::allocator<std::_List_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer>>,std::_List_val<std::_List_simple_types<_Ty>>,true>' being compiled
+          with
+          [
+              _Ty=const GameObject &,
+              _Alloc=std::allocator<const GameObject &>
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(751,1): error C2528: 'abstract declarator': you cannot create a pointer to a reference
+C:\Users\ralfz\source\repos\SFML\Project 1\src\Button.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\ralfz\source\repos\SFML\Project 1\src\GameData.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  Project 1.vcxproj -> C:\Users\ralfz\source\repos\SFML\Debug\ParachutePanic.exe
+C:\Users\ralfz\source\repos\SFML\Project 1\src\GameManager.h(32,2): warning C4091: 'static ': ignored on left of 'GameManager' when no variable is declared
+  Scene.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(793,1): error C2528: 'pointer': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(612): message : see reference to class template instantiation 'std::allocator<const GameObject &>' being compiled
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(706): message : see reference to class template instantiation 'std::_Default_allocator_traits<_Alloc>' being compiled
+          with
+          [
+              _Alloc=std::allocator<const GameObject &>
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(761): message : see reference to class template instantiation 'std::allocator_traits<_Alloc>' being compiled
+          with
+          [
+              _Alloc=std::allocator<const GameObject &>
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(761): message : see reference to alias template instantiation 'std::_Rebind_alloc_t<_Alloc,_Ty>' being compiled
+          with
+          [
+              _Alloc=std::allocator<const GameObject &>,
+              _Ty=const GameObject &
+          ]
+C:\Users\ralfz\source\repos\SFML\Project 1\src\Scenes\Scene.h(10): message : see reference to class template instantiation 'std::list<const GameObject &,std::allocator<const GameObject &>>' being compiled
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(794,1): error C2528: 'const_pointer': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(812,1): error C2528: 'address': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(816,1): error C2528: 'address': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(829,1): error C2528: '_Ptr': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(835,1): error C2528: 'allocate': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(848,1): error C2528: 'allocate': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(614,1): error C2528: 'abstract declarator': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(615,1): error C2528: 'abstract declarator': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(634,1): error C2528: '<template-parameter>': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(648,1): error C2528: '<template-parameter>': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(770,101): error C2528: '<template-parameter>': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(1222,1): error C2535: 'void std::list<const GameObject &,std::allocator<const GameObject &>>::push_front(_Ty)': member function already defined or declared
+          with
+          [
+              _Ty=const GameObject &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(953): message : see declaration of 'std::list<const GameObject &,std::allocator<const GameObject &>>::push_front'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(1234,1): error C2535: 'void std::list<const GameObject &,std::allocator<const GameObject &>>::push_back(_Ty)': member function already defined or declared
+          with
+          [
+              _Ty=const GameObject &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(957): message : see declaration of 'std::list<const GameObject &,std::allocator<const GameObject &>>::push_back'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(1303,1): error C2535: 'std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>> std::list<_Ty,std::allocator<_Ty>>::insert(std::_List_const_iterator<std::_List_val<std::_List_simple_types<_Ty>>>,_Ty)': member function already defined or declared
+          with
+          [
+              _Ty=const GameObject &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(961): message : see declaration of 'std::list<const GameObject &,std::allocator<const GameObject &>>::insert'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(750,1): error C2528: 'abstract declarator': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(334): message : see reference to class template instantiation 'std::_Simple_types<_Ty>' being compiled
+          with
+          [
+              _Ty=const GameObject &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(342): message : see reference to class template instantiation 'std::_List_simple_types<_Ty>' being compiled
+          with
+          [
+              _Ty=const GameObject &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(1368): message : see reference to class template instantiation 'std::_List_val<std::_List_simple_types<_Ty>>' being compiled
+          with
+          [
+              _Ty=const GameObject &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(1777): message : see reference to class template instantiation 'std::_Compressed_pair<std::allocator<std::_List_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer>>,std::_List_val<std::_List_simple_types<_Ty>>,true>' being compiled
+          with
+          [
+              _Ty=const GameObject &,
+              _Alloc=std::allocator<const GameObject &>
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(751,1): error C2528: 'abstract declarator': you cannot create a pointer to a reference
+C:\Users\ralfz\source\repos\SFML\Project 1\src\Scenes\Scene.cpp(25,31): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  GameManager.cpp
+C:\Users\ralfz\source\repos\SFML\Project 1\src\GameData.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(793,1): error C2528: 'pointer': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(612): message : see reference to class template instantiation 'std::allocator<const GameObject &>' being compiled
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(706): message : see reference to class template instantiation 'std::_Default_allocator_traits<_Alloc>' being compiled
+          with
+          [
+              _Alloc=std::allocator<const GameObject &>
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(761): message : see reference to class template instantiation 'std::allocator_traits<_Alloc>' being compiled
+          with
+          [
+              _Alloc=std::allocator<const GameObject &>
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(761): message : see reference to alias template instantiation 'std::_Rebind_alloc_t<_Alloc,_Ty>' being compiled
+          with
+          [
+              _Alloc=std::allocator<const GameObject &>,
+              _Ty=const GameObject &
+          ]
+C:\Users\ralfz\source\repos\SFML\Project 1\src\Scenes\Scene.h(10): message : see reference to class template instantiation 'std::list<const GameObject &,std::allocator<const GameObject &>>' being compiled
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(794,1): error C2528: 'const_pointer': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(812,1): error C2528: 'address': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(816,1): error C2528: 'address': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(829,1): error C2528: '_Ptr': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(835,1): error C2528: 'allocate': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(848,1): error C2528: 'allocate': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(614,1): error C2528: 'abstract declarator': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(615,1): error C2528: 'abstract declarator': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(634,1): error C2528: '<template-parameter>': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(648,1): error C2528: '<template-parameter>': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(770,101): error C2528: '<template-parameter>': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(1222,1): error C2535: 'void std::list<const GameObject &,std::allocator<const GameObject &>>::push_front(_Ty)': member function already defined or declared
+          with
+          [
+              _Ty=const GameObject &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(953): message : see declaration of 'std::list<const GameObject &,std::allocator<const GameObject &>>::push_front'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(1234,1): error C2535: 'void std::list<const GameObject &,std::allocator<const GameObject &>>::push_back(_Ty)': member function already defined or declared
+          with
+          [
+              _Ty=const GameObject &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(957): message : see declaration of 'std::list<const GameObject &,std::allocator<const GameObject &>>::push_back'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(1303,1): error C2535: 'std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>> std::list<_Ty,std::allocator<_Ty>>::insert(std::_List_const_iterator<std::_List_val<std::_List_simple_types<_Ty>>>,_Ty)': member function already defined or declared
+          with
+          [
+              _Ty=const GameObject &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(961): message : see declaration of 'std::list<const GameObject &,std::allocator<const GameObject &>>::insert'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(750,1): error C2528: 'abstract declarator': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(334): message : see reference to class template instantiation 'std::_Simple_types<_Ty>' being compiled
+          with
+          [
+              _Ty=const GameObject &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(342): message : see reference to class template instantiation 'std::_List_simple_types<_Ty>' being compiled
+          with
+          [
+              _Ty=const GameObject &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(1368): message : see reference to class template instantiation 'std::_List_val<std::_List_simple_types<_Ty>>' being compiled
+          with
+          [
+              _Ty=const GameObject &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(1777): message : see reference to class template instantiation 'std::_Compressed_pair<std::allocator<std::_List_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer>>,std::_List_val<std::_List_simple_types<_Ty>>,true>' being compiled
+          with
+          [
+              _Ty=const GameObject &,
+              _Alloc=std::allocator<const GameObject &>
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(751,1): error C2528: 'abstract declarator': you cannot create a pointer to a reference
+C:\Users\ralfz\source\repos\SFML\Project 1\src\GameManager.h(32,2): warning C4091: 'static ': ignored on left of 'GameManager' when no variable is declared
+C:\Users\ralfz\source\repos\SFML\Project 1\src\Scenes\MainMenuScene.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ralfz\source\repos\SFML\Project 1\src\Button.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ralfz\source\repos\SFML\Project 1\src\GameManager.cpp(5,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\ralfz\source\repos\SFML\Project 1\src\GameManager.cpp(52,82): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\ralfz\source\repos\SFML\Project 1\src\GameManager.cpp(52,61): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  main.cpp
+C:\Users\ralfz\source\repos\SFML\Project 1\src\GameData.h(2,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(793,1): error C2528: 'pointer': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(612): message : see reference to class template instantiation 'std::allocator<const GameObject &>' being compiled
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(706): message : see reference to class template instantiation 'std::_Default_allocator_traits<_Alloc>' being compiled
+          with
+          [
+              _Alloc=std::allocator<const GameObject &>
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(761): message : see reference to class template instantiation 'std::allocator_traits<_Alloc>' being compiled
+          with
+          [
+              _Alloc=std::allocator<const GameObject &>
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(761): message : see reference to alias template instantiation 'std::_Rebind_alloc_t<_Alloc,_Ty>' being compiled
+          with
+          [
+              _Alloc=std::allocator<const GameObject &>,
+              _Ty=const GameObject &
+          ]
+C:\Users\ralfz\source\repos\SFML\Project 1\src\Scenes\Scene.h(10): message : see reference to class template instantiation 'std::list<const GameObject &,std::allocator<const GameObject &>>' being compiled
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(794,1): error C2528: 'const_pointer': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(812,1): error C2528: 'address': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(816,1): error C2528: 'address': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(829,1): error C2528: '_Ptr': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(835,1): error C2528: 'allocate': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(848,1): error C2528: 'allocate': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(614,1): error C2528: 'abstract declarator': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(615,1): error C2528: 'abstract declarator': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(634,1): error C2528: '<template-parameter>': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(648,1): error C2528: '<template-parameter>': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(770,101): error C2528: '<template-parameter>': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(1222,1): error C2535: 'void std::list<const GameObject &,std::allocator<const GameObject &>>::push_front(_Ty)': member function already defined or declared
+          with
+          [
+              _Ty=const GameObject &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(953): message : see declaration of 'std::list<const GameObject &,std::allocator<const GameObject &>>::push_front'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(1234,1): error C2535: 'void std::list<const GameObject &,std::allocator<const GameObject &>>::push_back(_Ty)': member function already defined or declared
+          with
+          [
+              _Ty=const GameObject &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(957): message : see declaration of 'std::list<const GameObject &,std::allocator<const GameObject &>>::push_back'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(1303,1): error C2535: 'std::_List_iterator<std::_List_val<std::_List_simple_types<_Ty>>> std::list<_Ty,std::allocator<_Ty>>::insert(std::_List_const_iterator<std::_List_val<std::_List_simple_types<_Ty>>>,_Ty)': member function already defined or declared
+          with
+          [
+              _Ty=const GameObject &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(961): message : see declaration of 'std::list<const GameObject &,std::allocator<const GameObject &>>::insert'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(750,1): error C2528: 'abstract declarator': you cannot create a pointer to a reference
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(334): message : see reference to class template instantiation 'std::_Simple_types<_Ty>' being compiled
+          with
+          [
+              _Ty=const GameObject &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(342): message : see reference to class template instantiation 'std::_List_simple_types<_Ty>' being compiled
+          with
+          [
+              _Ty=const GameObject &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(1368): message : see reference to class template instantiation 'std::_List_val<std::_List_simple_types<_Ty>>' being compiled
+          with
+          [
+              _Ty=const GameObject &
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\list(1777): message : see reference to class template instantiation 'std::_Compressed_pair<std::allocator<std::_List_node<_Ty,std::_Default_allocator_traits<_Alloc>::void_pointer>>,std::_List_val<std::_List_simple_types<_Ty>>,true>' being compiled
+          with
+          [
+              _Ty=const GameObject &,
+              _Alloc=std::allocator<const GameObject &>
+          ]
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\include\xmemory(751,1): error C2528: 'abstract declarator': you cannot create a pointer to a reference
+C:\Users\ralfz\source\repos\SFML\Project 1\src\GameManager.h(32,2): warning C4091: 'static ': ignored on left of 'GameManager' when no variable is declared
+  Generating Code...

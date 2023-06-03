@@ -1,6 +1,6 @@
 #pragma once
 #include "GameObject.h"
-class Player : public GameObject
+class Enemy : public GameObject
 {
 private:
 	float speed;
@@ -11,7 +11,7 @@ private:
 	float mass = 30;
 
 public:
-	Player(float x, float y);
+	Enemy(float x, float y);
 	void Start() override;
 	void Update(float dt) override;
 };
