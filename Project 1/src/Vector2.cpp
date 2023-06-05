@@ -28,6 +28,13 @@ namespace rmath {
 		return Vector2(x - substractor.x, y - substractor.y);
 	}
 
+	Vector2& Vector2::operator+=(const Vector2 additor) 
+	{
+		x += additor.x;
+		y += additor.y;
+		return *this;
+	}
+
 	float Vector2::Magnitude(Vector2 vector2)
 	{
 		return sqrt(pow(vector2.x, 2) + (pow(vector2.y, 2)));

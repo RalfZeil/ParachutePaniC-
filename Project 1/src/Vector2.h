@@ -14,7 +14,7 @@ namespace rmath {
 		Vector2 operator * (const float multiplier);
 		Vector2 operator + (const Vector2 additor);
 		Vector2 operator - (const Vector2 substractor);
-
+		Vector2& operator += (const Vector2 additor);
 
 		static float Magnitude(Vector2 vector2);
 		static float SquareMagnitude(Vector2 vector2);
