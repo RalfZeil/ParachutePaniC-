@@ -6,10 +6,8 @@
 
 class Scene
 {
-protected:
-	std::list<GameObject*> gameObjects;
-
 public:
+	std::list<GameObject*> gameObjects;
 	Scene();
 	virtual ~Scene();
 	virtual void Update(float dt);

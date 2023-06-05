@@ -140,6 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\GameObjects\EnemySpawner.cpp" />
     <ClCompile Include="src\GameObjects\Enemy.cpp" />
     <ClCompile Include="src\GameObjects\Sphere.cpp" />
     <ClCompile Include="src\GameObjects\Player.cpp" />
@@ -157,6 +158,7 @@
     <ClCompile Include="src\Vector2.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\GameObjects\EnemySpawner.h" />
     <ClInclude Include="src\GameObjects\Enemy.h" />
     <ClInclude Include="src\GameObjects\Sphere.h" />
     <ClInclude Include="src\GameData.h" />

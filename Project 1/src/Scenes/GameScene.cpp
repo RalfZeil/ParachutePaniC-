@@ -2,20 +2,28 @@
 #include <iostream>
 
 
-GameScene::GameScene() : player(new Player(500.f, 600.f)), enemy(new Enemy(300.f, 600.f))
+GameScene::GameScene() : 
+	player(new Player(500.f, 600.f)), 
+	enemy(new Enemy(300.f, 0.f)), 
+	enemySpawner(new EnemySpawner(400.f, 0.f, gameObjects))
 {
 	gameObjects.push_back(player);
 	gameObjects.push_back(enemy);
+	gameObjects.push_back(enemySpawner);
 }
 
 void GameScene::Update(float dt)
 {
-	player->Update(dt);
-	enemy->Update(dt);
+	for (GameObject* gameObject : gameObjects) 
+	{
+		gameObject->Update(dt);
+	}
 }
 
 void GameScene::Draw(sf::RenderWindow& window)
 {
-	player->Draw(window);
-	enemy->Draw(window);
+	for (GameObject* gameObject : gameObjects)
+	{
+		gameObject->Draw(window);
+	}
 }

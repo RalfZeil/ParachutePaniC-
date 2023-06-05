@@ -2,6 +2,7 @@
 #include "Scene.h"
 #include "../GameObjects/Player.h"
 #include "../GameObjects/Enemy.h"
+#include "../GameObjects/EnemySpawner.h"
 
 class GameScene : public Scene
 {
@@ -13,5 +14,6 @@ public:
 private:
     Player* player;
     Enemy* enemy;
+    EnemySpawner* enemySpawner;
 };
 

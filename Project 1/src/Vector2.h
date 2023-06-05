@@ -21,7 +21,6 @@ namespace rmath {
 		static Vector2 Normalize(Vector2 vector2);
 
 		static float DotProduct(Vector2 v1, Vector2 v2);
-		//static Vector3 CrossProduct(Vector2, Vector2);
 	};
 }
 
