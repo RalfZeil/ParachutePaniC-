@@ -20,6 +20,18 @@ void Player::Start()
 
 void Player::Update(float dt)
 {
+	if (m_Position.x < 0) 
+	{ 
+		m_Position.x = 0; 
+		if(acceleration < 0){ acceleration = 0.f; }
+	}
+
+	else if (m_Position.x > SCREEN_WIDTH) 
+	{ 
+		m_Position.x = SCREEN_WIDTH; 
+		if (acceleration > 0) { acceleration = 0.f; }
+	}
+
 	force = 0;
 
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) ||

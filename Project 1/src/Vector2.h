@@ -10,10 +10,10 @@ namespace rmath {
 
 		Vector2(float x = 0, float y = 0);
 
-		Vector2 operator / (float divisor);
-		Vector2 operator * (float multiplier);
-		Vector2 operator + (Vector2 additor);
-		Vector2 operator - (Vector2 substractor);
+		Vector2 operator / (const float divisor);
+		Vector2 operator * (const float multiplier);
+		Vector2 operator + (const Vector2 additor);
+		Vector2 operator - (const Vector2 substractor);
 
 
 		static float Magnitude(Vector2 vector2);
