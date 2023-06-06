@@ -3,12 +3,13 @@
 #include "Sphere.h"
 #include "../GameData.h"
 
-Player::Player(float x, float y)
+Player::Player(float x, float y, Scene* scene)
 {
 	m_Sphere = Sphere(70);
 	m_Texture.loadFromFile("./Textures/Charlie.png", sf::IntRect(0, 0, 100, 100));
 	m_Sprite.setTexture(m_Texture);
 	m_Sprite.setPosition(0, 0);
+	m_Scene = scene;
 
 	ChangePosistion(rmath::Vector2(x, y));
 	speed = 200;
@@ -63,4 +64,9 @@ void Player::Update(float dt)
 	ChangePosistion(Vector2(GetPosistion().x + (acceleration ) * dt, GetPosistion().y));
 
 
+}
+
+void Player::Collision(GameObject* other)
+{
+	std::cout << "Player got hit!" << std::endl;
 }

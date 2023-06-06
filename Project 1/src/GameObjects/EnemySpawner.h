@@ -6,10 +6,11 @@
 class EnemySpawner : public GameObject
 {
 private:
-	std::list<GameObject*> &gameSceneGameObjects;
+	float spawnDelay = 2.f;
+	float spawnDelayAmount = 2.f;
 
 public:
-	EnemySpawner(float x, float y, std::list<GameObject*> &gameSceneGameObjectsList);
+	EnemySpawner(float x, float y, Scene* scene);
 	void Start() override;
 	void Update(float dt) override;
 };

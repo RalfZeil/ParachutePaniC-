@@ -11,7 +11,7 @@ private:
 	float mass = 30;
 
 public:
-	Enemy(float x, float y);
+	Enemy(float x, float y, Scene* scene);
 	void Start() override;
 	void Update(float dt) override;
 };

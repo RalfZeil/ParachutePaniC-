@@ -11,6 +11,12 @@ Scene::~Scene()
 
 void Scene::Update(float dt)
 {
+	for (GameObject* gameObject : QueuedToBeDestroyedObjects) 
+	{
+		gameObjects.remove(gameObject);
+		delete gameObject;
+	}
+	QueuedToBeDestroyedObjects.clear();
 }
 
 void Scene::DetectCollision()
@@ -25,11 +31,16 @@ void Scene::DetectCollision()
 			float vectorDeltaMagnitude = sqrt(pow(vectorDelta.x, 2) + pow(vectorDelta.y, 2));
 			float spheresDistance = vectorDeltaMagnitude - gameObjectA->GetSphere().GetRadius(); - gameObjectB->GetSphere().GetRadius();
 
-			std::cout << spheresDistance << std::endl;
-
-			if (spheresDistance < 0) { std::cout << "Collision" << std::endl; }
+			if (spheresDistance < 0) { 
+				gameObjectA->Collision(gameObjectB);
+			}
 		}
 	}
+}
+
+void Scene::DestroyObject(GameObject* gameObject)
+{
+	QueuedToBeDestroyedObjects.push_back(gameObject);
 }
 
 void Scene::Draw(sf::RenderWindow& window)

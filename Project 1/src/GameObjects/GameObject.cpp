@@ -1,12 +1,13 @@
 #include "GameObject.h"
 #include <SFML/Graphics.hpp>
+#include <iostream>
 
 GameObject::GameObject()
 {
 }
 
-GameObject::GameObject(Vector2 pos, Sphere sphere, sf::Sprite sprite) 
-	: m_Position(pos), m_Sphere(sphere), m_Sprite(sprite) 
+GameObject::GameObject(Vector2 pos, Sphere sphere, sf::Sprite sprite, Scene* scene)
+	: m_Position(pos), m_Sphere(sphere), m_Sprite(sprite) , m_Scene(scene)
 {
 	ChangePosistion(pos);
 }
@@ -25,6 +26,11 @@ Vector2 GameObject::GetPosistion()
 Sphere GameObject::GetSphere()
 {
 	return m_Sphere;
+}
+
+void GameObject::Collision(GameObject* other)
+{
+	std::cout << "Collision!" << std::endl;
 }
 
 void GameObject::Start()
