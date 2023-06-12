@@ -8,7 +8,7 @@ private:
 	float force = 0;
 	float friction = 0;
 	float deltaForce = 0;
-	float mass = 30;
+	float mass = 50;
 
 public:
 	Enemy(float x, float y, Scene* scene);

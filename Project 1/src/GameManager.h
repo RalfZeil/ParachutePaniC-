@@ -4,7 +4,7 @@
 #include "Scenes/Scene.h"
 
 
-static class GameManager
+class GameManager
 {
 private:
     void processEvents();
@@ -22,6 +22,7 @@ public:
 
     Scene* m_currentScene;
     Scene* m_mainMenuScene;
+    Scene* m_gameOverScene;
     Scene* m_gameScene; 
 
     GameManager();

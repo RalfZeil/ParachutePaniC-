@@ -25,7 +25,8 @@ void Scene::DetectCollision()
 	{
 		for (GameObject* gameObjectB : gameObjects) 
 		{
-			if (gameObjectA == gameObjectB) { break; }
+			//If its the same object continue
+			if (gameObjectA == gameObjectB) { continue; }
 
 			Vector2 vectorDelta = gameObjectB->GetPosistion() - gameObjectA->GetPosistion();
 			float vectorDeltaMagnitude = sqrt(pow(vectorDelta.x, 2) + pow(vectorDelta.y, 2));
@@ -40,9 +41,10 @@ void Scene::DetectCollision()
 
 void Scene::DestroyObject(GameObject* gameObject)
 {
+	//Queue Objects so GameObject Lists dont break when deleting
 	QueuedToBeDestroyedObjects.push_back(gameObject);
 }
 
-void Scene::Draw(sf::RenderWindow& window)
+void Scene::Draw(sf::RenderWindow& window) 
 {
 }

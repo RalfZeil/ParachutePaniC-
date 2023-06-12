@@ -2,6 +2,7 @@
 #include "Scenes/Scene.h"
 #include "Scenes/MainMenuScene.h"
 #include "Scenes/GameScene.h"
+#include "Scenes/GameOverScene.h"
 #include <memory>;
 
 GameManager *GameManager::GetInstance()
@@ -17,6 +18,7 @@ GameManager::GameManager() : m_window(sf::VideoMode(SCREEN_WIDTH, SCREEN_HEIGHT)
 {
     m_mainMenuScene = new MainMenuScene();
     m_gameScene = new GameScene();
+    m_gameOverScene = new GameOverScene();
     m_currentScene = m_mainMenuScene;
 }
 
@@ -24,6 +26,7 @@ GameManager::~GameManager()
 {
     delete m_mainMenuScene;
     delete m_gameScene;
+    delete m_gameOverScene;
     delete m_currentScene;
 }
 

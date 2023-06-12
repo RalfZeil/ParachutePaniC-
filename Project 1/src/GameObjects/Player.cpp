@@ -2,6 +2,7 @@
 #include "Rectangle.h"
 #include "Sphere.h"
 #include "../GameData.h"
+#include "../GameManager.h"
 
 Player::Player(float x, float y, Scene* scene)
 {
@@ -68,5 +69,5 @@ void Player::Update(float dt)
 
 void Player::Collision(GameObject* other)
 {
-	std::cout << "Player got hit!" << std::endl;
+	GameManager::GetInstance()->ChangeScene(GameManager::GetInstance()->m_gameOverScene);
 }

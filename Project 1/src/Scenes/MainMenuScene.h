@@ -15,5 +15,7 @@ public:
 
 private:
     std::vector<Button> m_buttons;
+    sf::Font m_titleFont;
+    sf::Text m_titleText;
 };
 
