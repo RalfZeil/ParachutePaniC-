@@ -6,8 +6,8 @@ GameObject::GameObject()
 {
 }
 
-GameObject::GameObject(Vector2 pos, Sphere sphere, sf::Sprite sprite, Scene* scene)
-	: m_Position(pos), m_Sphere(sphere), m_Sprite(sprite) , m_Scene(scene)
+GameObject::GameObject(Vector2 pos, Sphere sphere, Rigidbody rigidbody,sf::Sprite sprite, Scene* scene)
+	: m_Position(pos), m_Sphere(sphere), m_Rigidbody(rigidbody), m_Sprite(sprite), m_Scene(scene)
 {
 	ChangePosistion(pos);
 }
