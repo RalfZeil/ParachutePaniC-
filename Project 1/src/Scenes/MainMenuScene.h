@@ -14,6 +14,8 @@ public:
     std:: vector<Button> GetButtons();
 
 private:
+    void SetTitleText();
+
     std::vector<Button> m_buttons;
     sf::Font m_titleFont;
     sf::Text m_titleText;

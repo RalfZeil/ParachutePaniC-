@@ -30,7 +30,6 @@ Sphere GameObject::GetSphere()
 
 void GameObject::Collision(GameObject* other)
 {
-	std::cout << "Collision!" << std::endl;
 }
 
 void GameObject::Start()

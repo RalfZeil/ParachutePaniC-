@@ -4,20 +4,18 @@
 
 MainMenuScene::MainMenuScene()
 {
-    AddButton(sf::Vector2f(500.f, 200.f), sf::Vector2f(200.f, 50.f), sf::Color::Green, []() {
+    AddButton(sf::Vector2f(500.f, 500.f), sf::Vector2f(200.f, 50.f), sf::Color::Green, []() {
         GameManager::GetInstance()->ChangeScene(GameManager::GetInstance()->m_gameScene);
     });
 
-    AddButton(sf::Vector2f(500.f, 300.f), sf::Vector2f(200.f, 50.f), sf::Color::Blue, []() {
+    AddButton(sf::Vector2f(500.f, 600.f), sf::Vector2f(200.f, 50.f), sf::Color::Red, []() {
         std::exit(0);
     });
 
 
-    m_titleFont.loadFromFile("./RobotoBold.ttf");
-    m_titleText.setFont(m_titleFont);
-    m_titleText.setString("Hello world");
-    m_titleText.setCharacterSize(240);
-    m_titleText.setFillColor(sf::Color::Red);
+    m_titleFont.loadFromFile("./Fonts/RobotoBold.ttf");
+
+    SetTitleText();
 }
 
 void MainMenuScene::Update(float dt)
@@ -41,4 +39,14 @@ void MainMenuScene::AddButton(const sf::Vector2f& position, const sf::Vector2f& 
 std::vector<Button> MainMenuScene::GetButtons()
 {
     return m_buttons;
+}
+
+void MainMenuScene::SetTitleText()
+{
+    //TitleText
+    m_titleText.setFont(m_titleFont);
+    m_titleText.setString("Capybara Panic");
+    m_titleText.setCharacterSize(100);
+    m_titleText.setFillColor(sf::Color::White);
+    m_titleText.setOrigin(sf::Vector2f(-250, -100));
 }

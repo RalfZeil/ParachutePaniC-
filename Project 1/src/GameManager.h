@@ -14,6 +14,8 @@ private:
     sf::RenderWindow m_window;
     sf::Clock clock;
 
+    int highScore;
+
 public:
     GameManager(GameManager& other) = delete;
     void operator=(const GameManager&) = delete;
@@ -29,5 +31,7 @@ public:
     ~GameManager();
     void run();
     void ChangeScene(Scene* scene);
+    void SubmitScore(int score);
+    int GetHighScore();
 
 };

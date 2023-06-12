@@ -9,6 +9,10 @@ Scene::~Scene()
 {
 }
 
+void Scene::OnSceneLoad()
+{
+}
+
 void Scene::Update(float dt)
 {
 	for (GameObject* gameObject : QueuedToBeDestroyedObjects) 

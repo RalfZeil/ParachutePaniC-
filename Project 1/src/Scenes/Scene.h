@@ -12,6 +12,7 @@ public:
 	std::list<GameObject*> gameObjects;
 	Scene();
 	virtual ~Scene();
+	virtual void OnSceneLoad();
 	virtual void Update(float dt);
 	void DetectCollision();
 	void DestroyObject(GameObject* gameObject);

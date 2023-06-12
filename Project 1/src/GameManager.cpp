@@ -42,6 +42,20 @@ void GameManager::run()
 void GameManager::ChangeScene(Scene* scene)
 {
     m_currentScene = scene;
+    m_currentScene->OnSceneLoad();
+}
+
+void GameManager::SubmitScore(int score)
+{
+    if (score > highScore) 
+    {
+        highScore = score;
+    }
+}
+
+int GameManager::GetHighScore()
+{
+    return highScore;
 }
 
 void GameManager::processEvents()
@@ -56,6 +70,18 @@ void GameManager::processEvents()
 
                 if (m_currentScene == m_mainMenuScene) {
                     MainMenuScene* menuScene = dynamic_cast<MainMenuScene*>(m_currentScene);
+                    if (menuScene) {
+                        for (Button& button : menuScene->GetButtons()) {
+                            if (button.isMouseOver(mousePosition)) {
+                                button.handleClick();
+                                break;  // Exit the loop after handling the click for the first matching button
+                            }
+                        }
+                    }
+                }
+
+                if (m_currentScene == m_gameOverScene) {
+                    GameOverScene* menuScene = dynamic_cast<GameOverScene*>(m_currentScene);
                     if (menuScene) {
                         for (Button& button : menuScene->GetButtons()) {
                             if (button.isMouseOver(mousePosition)) {
