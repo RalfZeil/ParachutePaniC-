@@ -4,10 +4,12 @@
 
 GameOverScene::GameOverScene()
 {
+    //Restart Button
     AddButton(sf::Vector2f(500.f, 500.f), sf::Vector2f(200.f, 50.f), sf::Color::Green, []() {
         GameManager::GetInstance()->ChangeScene(GameManager::GetInstance()->m_gameScene);
         });
 
+    //Quit button
     AddButton(sf::Vector2f(500.f, 600.f), sf::Vector2f(200.f, 50.f), sf::Color::Red, []() {
         std::exit(0);
         });

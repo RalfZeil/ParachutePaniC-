@@ -19,6 +19,7 @@ void EnemySpawner::Start()
 
 void EnemySpawner::Update(float dt)
 {
+	//Spawn enemies every spawnDelay seconds
 	spawnDelay -= dt;
 
 	if (spawnDelay <= 0) 

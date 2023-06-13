@@ -8,7 +8,7 @@ using namespace std;
 
 GameScene::GameScene() : 
 	player(new Player(500.f, 600.f, this)), 
-	enemySpawner(new EnemySpawner(SCREEN_WIDTH/2, 0.f, this))
+	enemySpawner(new EnemySpawner(SCREEN_WIDTH/2, -100.f, this))
 {
 	gameObjects.push_back(player);
 	gameObjects.push_back(enemySpawner);
@@ -24,6 +24,7 @@ GameScene::GameScene() :
 
 void GameScene::OnSceneLoad()
 {
+	//Reset the scene each time it loads
 	for(GameObject* object : gameObjects) 
 	{
 		Enemy* enemy = dynamic_cast<Enemy*>(object);
@@ -34,7 +35,7 @@ void GameScene::OnSceneLoad()
 
 	player->ChangePosistion(rmath::Vector2(500.f, 600.f));
 	player->ResetRigidbody();
-	enemySpawner->ChangePosistion(rmath::Vector2(SCREEN_WIDTH / 2, 0.f));
+	enemySpawner->ChangePosistion(rmath::Vector2(SCREEN_WIDTH / 2, -100.f));
 
 	m_score = 0;
 

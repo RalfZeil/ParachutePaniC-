@@ -26,9 +26,7 @@ Rigidbody::Rigidbody(bool enableGravity, bool clampToScreen, float mass)
 
 void Rigidbody::Update(GameObject* gameObject, float dt)
 {
-	m_deltaForce = m_force - m_friction;
-	m_acceleration += m_deltaForce / m_mass;
-
+	//change friction so it applies fricion on the correct side
 	if (m_acceleration > 0)
 	{
 		m_friction = GRAVITY_CONSTANT * FRICTION_COEFFICIENT;
@@ -38,7 +36,9 @@ void Rigidbody::Update(GameObject* gameObject, float dt)
 		m_friction = -(GRAVITY_CONSTANT * FRICTION_COEFFICIENT);
 	}
 
-
+	//calculate acceleration
+	m_deltaForce = m_force - m_friction;
+	m_acceleration += m_deltaForce / m_mass;
 
 	gameObject->ChangePosistion(rmath::Vector2(
 		gameObject->GetPosistion().x + (m_acceleration) * dt * m_forceDirection.x,
@@ -47,6 +47,7 @@ void Rigidbody::Update(GameObject* gameObject, float dt)
 
 	if (m_clampToScreen) { ClampObject(gameObject); }
 
+	//reset force at the end
 	m_force = 0;
 }
 
@@ -55,18 +56,19 @@ void Rigidbody::ClampObject(GameObject* gameObject)
 	if (gameObject->GetPosistion().x < 0)
 	{
 		gameObject->ChangePosistion(rmath::Vector2(0, gameObject->GetPosistion().y));
-		if (m_acceleration < 0) { m_acceleration = 0.f; }
+		if (m_acceleration < 0) { Reset(); }
 	}
 
 	else if (gameObject->GetPosistion().x > SCREEN_WIDTH)
 	{
 		gameObject->ChangePosistion(rmath::Vector2(SCREEN_WIDTH, gameObject->GetPosistion().y));
-		if (m_acceleration > 0) { m_acceleration = 0.f; }
+		if (m_acceleration > 0) { Reset(); }
 	}
 }
 
 void Rigidbody::SetForce(const rmath::Vector2& forceVector)
 {
+	//Seperate force and the direction
 	m_force = rmath::Vector2::Magnitude(forceVector);
 	m_forceDirection = rmath::Vector2::Normalize(forceVector);
 }

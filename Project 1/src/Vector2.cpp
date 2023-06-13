@@ -36,6 +36,16 @@ namespace rmath {
 		return *this;
 	}
 
+	bool Vector2::operator!=(const Vector2 other)
+	{
+		return (x != other.x || y != other.y);
+	}
+
+	bool Vector2::operator==(const Vector2 other)
+	{
+		return (x == other.x && y == other.y);
+	}
+
 	float Vector2::Magnitude(Vector2 vector2)
 	{
 		return sqrt(pow(vector2.x, 2) + (pow(vector2.y, 2)));

@@ -60,6 +60,7 @@ int GameManager::GetHighScore()
 
 void GameManager::processEvents()
 {
+    //Handle button clicks
     sf::Event event;
     while (m_window.pollEvent(event)) {
         if (event.type == sf::Event::Closed)
@@ -93,7 +94,6 @@ void GameManager::processEvents()
                 }
             }
         }
-        // Process other events (e.g., keyboard input) here
     }
 }
 
@@ -102,6 +102,7 @@ void GameManager::update()
 {
     if (m_currentScene) {
 
+        //Get delta time to pass to Update()
         float dt = clock.restart().asSeconds();
 
         m_currentScene->Update(dt);

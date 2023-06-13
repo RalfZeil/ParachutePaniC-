@@ -25,6 +25,8 @@ void Scene::Update(float dt)
 
 void Scene::DetectCollision()
 {
+	//Detect collision with circle colliders
+
 	for (GameObject* gameObjectA : gameObjects) 
 	{
 		for (GameObject* gameObjectB : gameObjects) 

@@ -39,5 +39,6 @@ void Player::Update(float dt)
 
 void Player::Collision(GameObject* other)
 {
+	//Go to game over scene when collided with enemy
 	GameManager::GetInstance()->ChangeScene(GameManager::GetInstance()->m_gameOverScene);
 }
