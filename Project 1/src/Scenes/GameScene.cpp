@@ -1,13 +1,14 @@
 #include "GameScene.h"
 #include <iostream>
 #include "../GameManager.h"
+#include "../GameData.h"
 
 using namespace std;
 
 
 GameScene::GameScene() : 
 	player(new Player(500.f, 600.f, this)), 
-	enemySpawner(new EnemySpawner(400.f, 0.f, this))
+	enemySpawner(new EnemySpawner(SCREEN_WIDTH/2, 0.f, this))
 {
 	gameObjects.push_back(player);
 	gameObjects.push_back(enemySpawner);
@@ -32,7 +33,8 @@ void GameScene::OnSceneLoad()
 	}
 
 	player->ChangePosistion(rmath::Vector2(500.f, 600.f));
-	enemySpawner->ChangePosistion(rmath::Vector2(400.f, 0.f));
+	player->ResetRigidbody();
+	enemySpawner->ChangePosistion(rmath::Vector2(SCREEN_WIDTH / 2, 0.f));
 
 	m_score = 0;
 

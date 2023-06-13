@@ -6,8 +6,8 @@
 class EnemySpawner : public GameObject
 {
 private:
-	float spawnDelay = 2.f;
-	float spawnDelayAmount = 2.f;
+	float spawnDelay = 0.5f;
+	float spawnDelayAmount = 0.5f;
 
 public:
 	EnemySpawner(float x, float y, Scene* scene);

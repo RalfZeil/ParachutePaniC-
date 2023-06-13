@@ -25,13 +25,13 @@ void Player::Update(float dt)
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) ||
 		sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
 	{
-		m_Rigidbody.SetForce(-30);
+		m_Rigidbody.SetForce(Vector2(-30, 0));
 	}
 
 	else if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) ||
 		sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
 	{
-		m_Rigidbody.SetForce(30);
+		m_Rigidbody.SetForce(Vector2(30, 0));
 	}
 
 	m_Rigidbody.Update(this, dt);

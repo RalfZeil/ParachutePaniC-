@@ -29,7 +29,7 @@ public:
 	virtual void Collision(GameObject* other);
 	virtual void Start();
 	virtual void Update(float dt);
+	void ResetRigidbody();
 	void Draw(sf::RenderWindow& window);
-
 };
 

@@ -21,5 +21,28 @@ void Enemy::Start()
 
 void Enemy::Update(float dt)
 {
+	m_stateTimer -= dt;
+
+	//Switch state every 0-1 seconds
+	if (m_stateTimer < 0) 
+	{
+		m_stateTimer = (float) rand()/RAND_MAX;
+		m_state = std::rand() % 3;
+	}
+
+	//State 0 is dont move, 1 move left, 2 move right
+	switch (m_state) 
+	{
+		case 0:
+			m_Rigidbody.SetForce(Vector2(0, 15));
+			break;
+		case 1:
+			m_Rigidbody.SetForce(Vector2(-20, 10));
+			break;
+		case 2:
+			m_Rigidbody.SetForce(Vector2(20, 10));
+			break;
+	}
+
 	m_Rigidbody.Update(this, dt);
 }

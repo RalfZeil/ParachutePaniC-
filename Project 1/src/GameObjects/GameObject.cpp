@@ -40,6 +40,11 @@ void GameObject::Update(float dt)
 {
 }
 
+void GameObject::ResetRigidbody() 
+{
+	m_Rigidbody.Reset();
+}
+
 void GameObject::Draw(sf::RenderWindow& window)
 {
 	window.draw(m_Sprite);	
