@@ -53,7 +53,7 @@ void Rigidbody::Update(GameObject* gameObject, float dt)
 
 void Rigidbody::ClampObject(GameObject* gameObject) 
 {
-	if (gameObject->GetPosistion().x < 0)
+	if (gameObject->GetPosistion().x < 1)
 	{
 		gameObject->ChangePosistion(rmath::Vector2(0, gameObject->GetPosistion().y));
 		if (m_acceleration < 0) { Reset(); }
