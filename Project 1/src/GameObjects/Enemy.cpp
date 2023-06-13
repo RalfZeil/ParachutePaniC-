@@ -37,10 +37,10 @@ void Enemy::Update(float dt)
 			m_Rigidbody.SetForce(Vector2(0, 15));
 			break;
 		case 1:
-			m_Rigidbody.SetForce(Vector2(-20, 10));
+			m_Rigidbody.SetForce(Vector2(-15, 10));
 			break;
 		case 2:
-			m_Rigidbody.SetForce(Vector2(20, 10));
+			m_Rigidbody.SetForce(Vector2(15, 10));
 			break;
 	}
 

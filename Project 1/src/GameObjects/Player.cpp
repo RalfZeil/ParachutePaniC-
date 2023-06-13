@@ -7,7 +7,7 @@
 Player::Player(float x, float y, Scene* scene)
 {
 	m_Sphere = Sphere(70);
-	m_Rigidbody = Rigidbody(false, true, 30);
+	m_Rigidbody = Rigidbody(false, true, 5);
 	m_Texture.loadFromFile("./Textures/Charlie.png", sf::IntRect(0, 0, 100, 100));
 	m_Sprite.setTexture(m_Texture);
 	m_Sprite.setPosition(0, 0);
